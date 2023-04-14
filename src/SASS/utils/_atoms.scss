@@ -1,0 +1,42 @@
+// ----- imports
+@use "tokens";
+
+/// ----- logic
+
+@mixin generate-styles($color) {
+	color: $color;
+	&-background {
+		background-color: $color;
+	}
+}
+
+// ----- social colors
+
+.facebook {
+	@include generate-styles($facebook-color);
+}
+
+.twitch {
+	@include generate-styles($twitch-color);
+}
+
+.youtube {
+	@include generate-styles($youtube-color);
+}
+
+.spotify {
+	@include generate-styles($spotify-color);
+}
+
+.tiktok {
+	box-shadow: 0 2px 4px $tiktok-shadow-blue, 0 4px 12px $tiktok-shadow-red;
+}
+
+// ------ dev colors
+
+.background {
+	background-color: $background-blue;
+	&-white {
+		background-color: $EDarkMatter-Grey-Palette-1-hex;
+	}
+}
