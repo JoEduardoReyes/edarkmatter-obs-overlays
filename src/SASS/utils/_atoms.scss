@@ -1,5 +1,5 @@
 // ----- imports
-@use "tokens";
+@use "tokens" as t;
 
 /// ----- logic
 
@@ -10,33 +10,41 @@
 	}
 }
 
-// ----- social colors
+/* ----- social colors */
 
 .facebook {
-	@include generate-styles($facebook-color);
+	@include generate-styles(t.$facebook-color);
 }
 
 .twitch {
-	@include generate-styles($twitch-color);
+	@include generate-styles(t.$twitch-color);
 }
 
 .youtube {
-	@include generate-styles($youtube-color);
+	@include generate-styles(t.$youtube-color);
 }
 
 .spotify {
-	@include generate-styles($spotify-color);
+	@include generate-styles(t.$spotify-color);
+}
+
+.black {
+	@include generate-styles(t.$EDarkMatter-Black);
+}
+
+.white {
+	@include generate-styles(t.$EDarkMatter-White);
 }
 
 .tiktok {
-	box-shadow: 0 2px 4px $tiktok-shadow-blue, 0 4px 12px $tiktok-shadow-red;
+	box-shadow: 0 2px 4px t.$tiktok-shadow-blue, 0 4px 12px t.$tiktok-shadow-red;
 }
 
-// ------ dev colors
+/* ------ dev colors */
 
 .background {
-	background-color: $background-blue;
+	background-color: t.$background-blue;
 	&-white {
-		background-color: $EDarkMatter-Grey-Palette-1-hex;
+		background-color: t.$EDarkMatter-Grey-Palette-1-hex;
 	}
 }

@@ -1,0 +1,55 @@
+/* ----- social colors */
+.facebook {
+  color: #1877f2;
+}
+.facebook-background {
+  background-color: #1877f2;
+}
+
+.twitch {
+  color: #9146ff;
+}
+.twitch-background {
+  background-color: #9146ff;
+}
+
+.youtube {
+  color: #ff0000;
+}
+.youtube-background {
+  background-color: #ff0000;
+}
+
+.spotify {
+  color: #1db954;
+}
+.spotify-background {
+  background-color: #1db954;
+}
+
+.black {
+  color: black;
+}
+.black-background {
+  background-color: black;
+}
+
+.white {
+  color: white;
+}
+.white-background {
+  background-color: white;
+}
+
+.tiktok {
+  -webkit-box-shadow: 0 2px 4px #69c9d0, 0 4px 12px #ee1d52;
+          box-shadow: 0 2px 4px #69c9d0, 0 4px 12px #ee1d52;
+}
+
+/* ------ dev colors */
+.background {
+  background-color: #1f2526;
+}
+.background-white {
+  background-color: #92aeb3;
+}
