@@ -30,6 +30,15 @@ $EDarkMatter-Grey-Palette-5-hex: #000000;
 $EDarkMatter-White: white;
 $EDarkMatter-Black: black;
 
-// --- Dev colors -------------------------------- algunos colores que serviran para
+// --- Dev colors -------------------------------- algunos colores que serviran para resaltar contrastes durante el desarrollo
 
 $background-blue: #1f2526;
+
+// ----- Spacing --------------------------------
+
+// Main in game spacing
+
+$max-ingame-horizontal-spacing: 420px;
+$max-outgame-horizontal-spacing: calc($max-ingame-horizontal-spacing * 2);
+$ingame-43-spacing: calc($max-ingame-horizontal-spacing / 4 * 3);
+$outgame-43-spacing: calc($max-outgame-horizontal-spacing / 4 * 3);

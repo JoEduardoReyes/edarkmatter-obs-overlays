@@ -1,0 +1,38 @@
+// ----- imports
+@use "tokens" as t;
+
+/* ----- spacing ----- */
+/* regular spacing */
+.space-width {
+	width: t.$max-ingame-horizontal-spacing;
+}
+
+.space-height {
+	height: t.$max-ingame-horizontal-spacing;
+}
+
+.double-space-width {
+	width: calc(t.$max-ingame-horizontal-spacing * 2);
+}
+
+.double-space-height {
+	height: calc(t.$max-ingame-horizontal-spacing * 2);
+}
+
+/* specific spacing */
+
+.ingame-horizontal-space {
+	width: t.$max-ingame-horizontal-spacing;
+}
+
+.ingame-vertical-43-space {
+	width: t.$ingame-43-spacing;
+}
+
+.outgame-horizontal-space {
+	width: t.$max-outgame-horizontal-spacing;
+}
+
+.outgame-vertical-43-space {
+	width: $outgame-43-spacing;
+}
