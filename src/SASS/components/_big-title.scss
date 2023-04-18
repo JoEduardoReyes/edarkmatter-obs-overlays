@@ -15,3 +15,8 @@
 	@extend .main-font;
 	@extend .semibold-font;
 }
+
+.secondary-title {
+	@extend .secondary-font;
+	@extend .complementary-font;
+}
