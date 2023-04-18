@@ -1,0 +1,11 @@
+// Utils
+
+@use "../utils/index" as utils;
+
+// Styles
+
+.big-title-level-one {
+	@extend .xl-font;
+	@extend .main-font;
+	@extend .semibold-font;
+}

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Tilt+Neon&display=swap");
+/* ----- social colors */
+.facebook {
+  color: #1877f2;
+}
+.facebook-background {
+  background-color: #1877f2;
+}
+
+.twitch {
+  color: #9146ff;
+}
+.twitch-background {
+  background-color: #9146ff;
+}
+
+.youtube {
+  color: #ff0000;
+}
+.youtube-background {
+  background-color: #ff0000;
+}
+
+.spotify {
+  color: #1db954;
+}
+.spotify-background {
+  background-color: #1db954;
+}
+
+.black {
+  color: black;
+}
+.black-background {
+  background-color: black;
+}
+
+.white {
+  color: white;
+}
+.white-background {
+  background-color: white;
+}
+
+.tiktok {
+  -webkit-box-shadow: 0 2px 4px #69c9d0, 0 4px 12px #ee1d52;
+          box-shadow: 0 2px 4px #69c9d0, 0 4px 12px #ee1d52;
+}
+
+/* ------ dev colors */
+.background {
+  background-color: #1f2526;
+}
+.background-white {
+  background-color: #92aeb3;
+}
+
+* {
+  color: white;
+}
+
+.main-font, .big-title-level-one {
+  font-family: "Montserrat", sans-serif;
+}
+
+.secondary-font {
+  font-family: "Tilt Neon", cursive;
+}
+
+.xl-font, .big-title-level-one {
+  font-size: 240px;
+}
+
+.semibold-font, .big-title-level-one {
+  font-weight: 600;
+}
+
+/* ----- spacing ----- */
+/* regular spacing */
+.space-width {
+  width: 420px;
+}
+
+.space-height {
+  height: 420px;
+}
+
+.double-space-width {
+  width: 840px;
+}
+
+.double-space-height {
+  height: 840px;
+}
+
+/* specific spacing */
+.ingame-horizontal-space {
+  width: 420px;
+}
+
+.ingame-vertical-43-space {
+  width: 315px;
+}
+
+.outgame-horizontal-space {
+  width: 840px;
+}
+
+.outgame-vertical-43-space {
+  width: 630px;
+}
