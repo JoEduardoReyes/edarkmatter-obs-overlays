@@ -1,0 +1,6 @@
+// ----- imports
+@use "tokens" as t;
+
+.main-color-border {
+	border: t.$EDarkMatter-Gaming-Main-Color-2-hex 5px solid;
+}

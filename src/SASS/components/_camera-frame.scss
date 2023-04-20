@@ -1,0 +1,13 @@
+// Utils
+
+@use "../utils/index" as utils;
+
+// Content
+
+.camera-frame {
+	@extend .main-color-border;
+	&__large {
+		@extend .space-double-width;
+		@extend .space-double-height-ratio;
+	}
+}

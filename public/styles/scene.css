@@ -103,32 +103,28 @@ body {
 .space-width {
   width: 420px;
 }
-
+.space-width-ratio {
+  width: 315px;
+}
 .space-height {
   height: 420px;
 }
-
-.double-space-width {
-  width: 840px;
-}
-
-.double-space-height {
-  height: 840px;
-}
-
-/* specific spacing */
-.ingame-horizontal-space {
-  width: 420px;
-}
-
-.ingame-vertical-43-space {
+.space-height-ratio {
   width: 315px;
 }
-
-.outgame-horizontal-space {
+.space-double-width, .camera-frame__large {
   width: 840px;
 }
-
-.outgame-vertical-43-space {
+.space-double-width-ratio {
   width: 630px;
+}
+.space-double-height {
+  height: 840px;
+}
+.space-double-height-ratio, .camera-frame__large {
+  height: 630px;
+}
+
+.main-color-border, .camera-frame {
+  border: #5d04d9 5px solid;
 }
