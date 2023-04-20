@@ -30,7 +30,12 @@
 	font-weight: t.$font-semibold-font-weight;
 }
 
-.social-icons {
+.small-widget {
+	font-size: t.$widget__small;
+	font-family: t.$secondary-font-family;
+}
+
+i[class^="fa"] {
 	font-size: t.$social-icon-text-size;
 	margin-inline: 8px;
 }

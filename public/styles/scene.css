@@ -71,6 +71,11 @@ body {
   background-color: #92aeb3;
 }
 
+/* ---- other colors */
+.glass-background, .social-widget__camera-frame {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 * {
   color: white;
 }
@@ -99,14 +104,19 @@ body {
   font-weight: 600;
 }
 
-.social-icons, .secondary-title i {
+.small-widget, .social-widget__camera-frame {
+  font-size: 40px;
+  font-family: "Tilt Neon", cursive;
+}
+
+i[class^=fa] {
   font-size: 0.8em;
   margin-inline: 8px;
 }
 
 /* ----- spacing ----- */
 /* regular spacing */
-.space-width {
+.space-width, .camera-frame, .social-widget__camera-frame {
   width: 420px;
 }
 .space-width-ratio {
@@ -115,8 +125,8 @@ body {
 .space-height {
   height: 420px;
 }
-.space-height-ratio {
-  width: 315px;
+.space-height-ratio, .camera-frame {
+  height: 315px;
 }
 .space-double-width, .camera-frame__large {
   width: 840px;
@@ -135,7 +145,18 @@ body {
   border: #5d04d9 5px solid;
 }
 
+.rounded, .camera-frame, .social-widget__camera-frame {
+  border-radius: 20px;
+}
+
+.rounded-total, .bolts > div {
+  border-radius: 50%;
+}
+
 .camera-frame {
+  position: relative;
+}
+.camera-frame__large {
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,4 +171,43 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.social-widget {
+  position: relative;
+}
+.social-widget__camera-frame {
+  position: absolute;
+  bottom: -100px;
+  line-height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bolts {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-inline: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bolts > div {
+  width: 15px;
+  height: 15px;
+  border: 3px solid white;
 }

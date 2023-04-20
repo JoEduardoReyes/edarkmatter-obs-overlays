@@ -30,6 +30,11 @@ $EDarkMatter-Grey-Palette-5-hex: #000000;
 $EDarkMatter-White: white;
 $EDarkMatter-Black: black;
 
+$glass-color: rgba(
+	$color: #000000,
+	$alpha: 0.1,
+);
+
 // --- Dev colors -------------------------------- algunos colores que serviran para resaltar contrastes durante el desarrollo
 
 $background-blue: #1f2526;
@@ -54,7 +59,12 @@ $extra-large-font-size: 240px;
 $medium-font-size: 80px;
 $complementary-font-size: 90px;
 $social-icon-text-size: 0.8em;
+$widget__small: 40px;
 
 // font weight
 
 $font-semibold-font-weight: 600;
+
+// Border Radius
+
+$border-radius: 20px;

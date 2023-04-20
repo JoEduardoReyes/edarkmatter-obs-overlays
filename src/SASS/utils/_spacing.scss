@@ -13,7 +13,7 @@
 	&-height {
 		height: t.$spacing;
 		&-ratio {
-			width: t.$aspect-ratio;
+			height: t.$aspect-ratio;
 		}
 	}
 	&-double {
