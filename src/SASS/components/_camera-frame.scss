@@ -10,4 +10,9 @@
 		@extend .space-double-width;
 		@extend .space-double-height-ratio;
 	}
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
 }

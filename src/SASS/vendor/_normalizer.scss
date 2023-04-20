@@ -1,9 +1,10 @@
 // Borramos todas las relgas por defecto
-
+/* Normalizer */
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	box-sizing: border-box;
 }
 
 html,
