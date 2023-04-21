@@ -1,0 +1,13 @@
+// ----- Estilos especificos para las pantallas de titulo
+
+.scene-title {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.title-level-two {
+	position: absolute;
+	top: 100px;
+}

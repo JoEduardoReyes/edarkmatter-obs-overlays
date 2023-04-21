@@ -1,0 +1,48 @@
+// ----- imports
+@use "tokens" as t;
+
+/* ----- spacing ----- */
+/* regular spacing */
+.space {
+	&-width {
+		width: t.$spacing;
+		&-ratio {
+			width: t.$aspect-ratio;
+		}
+	}
+	&-height {
+		height: t.$spacing;
+		&-ratio {
+			height: t.$aspect-ratio;
+		}
+	}
+	&-double {
+		&-width {
+			width: calc(t.$spacing * 2);
+			&-ratio {
+				width: calc(t.$aspect-ratio * 2);
+			}
+		}
+		&-height {
+			height: calc(t.$spacing * 2);
+			&-ratio {
+				height: calc(t.$aspect-ratio * 2);
+			}
+		}
+	}
+}
+
+.scene {
+	&-title {
+		padding-left: t.$title-scene-padding;
+	}
+	&-game {
+		display: grid;
+		grid-template-columns: t.$spacing 1fr t.$spacing;
+	}
+}
+
+.video-container {
+	height: (t.$spacing * 1.5);
+	width: (t.$video-ratio * 1.5);
+}

@@ -1,0 +1,13 @@
+//- Head es lo unico que vamos a extender *//
+extends ../components/_head.pug
+
+//- including
+
+block title
+  title Welcome Scene
+
+block content
+  .scene.scene-title
+    +big-title-level-two("Iniciando")
+    +big-title-level-one
+    +secondary-title

@@ -1,0 +1,300 @@
+/* Google Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Tilt+Neon&display=swap");
+/* Normalizer */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  max-height: 1080px;
+}
+
+/* ----- social colors */
+.facebook {
+  color: #1877f2;
+}
+.facebook-background {
+  background-color: #1877f2;
+}
+
+.twitch {
+  color: #9146ff;
+}
+.twitch-background {
+  background-color: #9146ff;
+}
+
+.youtube {
+  color: #ff0000;
+}
+.youtube-background {
+  background-color: #ff0000;
+}
+
+.spotify {
+  color: #1db954;
+}
+.spotify-background {
+  background-color: #1db954;
+}
+
+.black {
+  color: black;
+}
+.black-background {
+  background-color: black;
+}
+
+.white {
+  color: white;
+}
+.white-background {
+  background-color: white;
+}
+
+.tiktok {
+  -webkit-box-shadow: 0 2px 4px #69c9d0, 0 4px 12px #ee1d52;
+          box-shadow: 0 2px 4px #69c9d0, 0 4px 12px #ee1d52;
+}
+
+/* ------ dev colors */
+.background {
+  background-color: #1f2526;
+}
+.background-white {
+  background-color: #92aeb3;
+}
+
+/* ---- other colors */
+.glass-background, .social-widget__camera-frame {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ----- Fonts ----- */
+* {
+  color: white;
+}
+
+.main-font, .big-title-level-one, .big-title-level-two {
+  font-family: "Montserrat", sans-serif;
+}
+
+.secondary-font, .title-level-two, .secondary-title {
+  font-family: "Tilt Neon", cursive;
+}
+
+.xl-font, .big-title-level-one {
+  font-size: 240px;
+}
+
+.md-font, .title-level-two, .big-title-level-two {
+  font-size: 80px;
+}
+
+.complementary-font, .secondary-title {
+  font-size: 90px;
+}
+
+.semibold-font, .big-title-level-one, .big-title-level-two {
+  font-weight: 600;
+}
+
+.widget, .social-widget {
+  font-family: "Tilt Neon", cursive;
+}
+.widget-small, .social-widget__camera-frame {
+  font-size: 40px;
+}
+.widget-large, .social-widget__camera-frame__large {
+  font-size: 60px;
+}
+
+i[class^=fa] {
+  font-size: 0.8em;
+  margin-inline: 8px;
+}
+
+/* ----- spacing ----- */
+/* regular spacing */
+.space-width, .camera-frame, .social-widget__camera-frame {
+  width: 420px;
+}
+.space-width-ratio {
+  width: 315px;
+}
+.space-height {
+  height: 420px;
+}
+.space-height-ratio, .camera-frame {
+  height: 315px;
+}
+.space-double-width, .camera-frame__large, .social-widget__camera-frame__large {
+  width: 840px;
+}
+.space-double-width-ratio {
+  width: 630px;
+}
+.space-double-height {
+  height: 840px;
+}
+.space-double-height-ratio, .camera-frame__large {
+  height: 630px;
+}
+
+.scene-title {
+  padding-left: 140px;
+}
+.scene-game {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 420px 1fr 420px;
+  grid-template-columns: 420px 1fr 420px;
+}
+
+.video-container {
+  height: 630px;
+  width: 1120px;
+}
+
+.main-color-border, .video-container, .camera-frame {
+  border: #5d04d9 5px solid;
+}
+
+.rounded, .camera-frame, .social-widget__camera-frame {
+  border-radius: 20px;
+}
+
+.rounded-total, .bolts > div {
+  border-radius: 50%;
+}
+
+.bolts {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-inline: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bolts > div {
+  width: 15px;
+  height: 15px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.camera-frame {
+  position: relative;
+}
+.camera-frame__large {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-widget {
+  position: relative;
+}
+.social-widget__camera-frame {
+  position: absolute;
+  bottom: -100px;
+  line-height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social-widget__camera-frame__large {
+  bottom: 0;
+}
+
+/* Video Container */
+.scene-title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title-level-two {
+  position: absolute;
+  top: 100px;
+}
+
+.scene-game {
+  height: 1080px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 420px 1fr 420px;
+  grid-template-columns: 420px 1fr 420px;
+  -ms-grid-rows: 35% 65%;
+  grid-template-rows: 35% 65%;
+  place-items: end;
+}
+
+.scene-game > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.scene-game > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.scene-game > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.scene-game > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.scene-game > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+
+.scene-game > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}

@@ -1,0 +1,44 @@
+// Utils
+
+@use "../utils/index" as utils;
+
+// Content
+
+.camera-frame {
+	@extend .main-color-border;
+	@extend .space-width;
+	@extend .space-height-ratio;
+	@extend .rounded;
+	position: relative;
+	&__large {
+		@extend .space-double-width;
+		@extend .space-double-height-ratio;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+	}
+}
+
+.social-widget {
+	@extend .widget;
+	position: relative;
+	&__camera-frame {
+		@extend .glass-background;
+		@extend .widget-small;
+		@extend .space-width;
+		@extend .rounded;
+		position: absolute;
+		bottom: -100px;
+		line-height: 2em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&__large {
+			@extend .space-double-width;
+			@extend .widget-large;
+			bottom: 0;
+		}
+	}
+}

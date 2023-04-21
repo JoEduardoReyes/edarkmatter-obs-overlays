@@ -1,0 +1,48 @@
+// ----- imports
+
+@use "tokens" as t;
+
+/* ----- Fonts ----- */
+
+* {
+	color: t.$EDarkMatter-White;
+}
+
+.main-font {
+	font-family: t.$main-font-family;
+}
+
+.secondary-font {
+	font-family: t.$secondary-font-family;
+}
+
+.xl-font {
+	font-size: t.$extra-large-font-size;
+}
+
+.md-font {
+	font-size: t.$medium-font-size;
+}
+
+.complementary-font {
+	font-size: t.$complementary-font-size;
+}
+
+.semibold-font {
+	font-weight: t.$font-semibold-font-weight;
+}
+
+.widget {
+	font-family: t.$secondary-font-family;
+	&-small {
+		font-size: t.$widget__small;
+	}
+	&-large {
+		font-size: t.$widget__large;
+	}
+}
+
+i[class^="fa"] {
+	font-size: t.$social-icon-text-size;
+	margin-inline: 8px;
+}

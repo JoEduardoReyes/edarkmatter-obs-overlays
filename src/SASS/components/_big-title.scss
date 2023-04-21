@@ -1,0 +1,22 @@
+// Utils
+
+@use "../utils/index" as utils;
+
+// Styles
+
+.big-title-level-one {
+	@extend .xl-font;
+	@extend .main-font;
+	@extend .semibold-font;
+}
+
+.big-title-level-two {
+	@extend .md-font;
+	@extend .main-font;
+	@extend .semibold-font;
+}
+
+.secondary-title {
+	@extend .secondary-font;
+	@extend .complementary-font;
+}

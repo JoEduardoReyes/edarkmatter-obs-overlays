@@ -1,0 +1,11 @@
+//* Game Scene
+
+@use "../utils/tokens" as t;
+
+.scene-game {
+	height: 1080px;
+	display: grid;
+	grid-template-columns: t.$spacing 1fr t.$spacing;
+	grid-template-rows: 35% 65%;
+	place-items: end;
+}
