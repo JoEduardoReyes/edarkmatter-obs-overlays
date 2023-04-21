@@ -78,6 +78,7 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* ----- Fonts ----- */
 * {
   color: white;
 }
@@ -86,7 +87,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.secondary-font, .secondary-title {
+.secondary-font, .title-level-two, .secondary-title {
   font-family: "Tilt Neon", cursive;
 }
 
@@ -94,7 +95,7 @@ body {
   font-size: 240px;
 }
 
-.md-font, .big-title-level-two {
+.md-font, .title-level-two, .big-title-level-two {
   font-size: 80px;
 }
 
@@ -158,7 +159,12 @@ i[class^=fa] {
   grid-template-columns: 420px 1fr 420px;
 }
 
-.main-color-border, .camera-frame {
+.video-container {
+  height: 630px;
+  width: 1120px;
+}
+
+.main-color-border, .video-container, .camera-frame {
   border: #5d04d9 5px solid;
 }
 
@@ -232,6 +238,7 @@ i[class^=fa] {
   bottom: 0;
 }
 
+/* Video Container */
 .scene-title {
   height: 100%;
   display: -webkit-box;
@@ -244,6 +251,11 @@ i[class^=fa] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.title-level-two {
+  position: absolute;
+  top: 100px;
 }
 
 .scene-game {

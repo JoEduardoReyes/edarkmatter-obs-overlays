@@ -41,3 +41,8 @@
 		grid-template-columns: t.$spacing 1fr t.$spacing;
 	}
 }
+
+.video-container {
+	height: (t.$spacing * 1.5);
+	width: (t.$video-ratio * 1.5);
+}
