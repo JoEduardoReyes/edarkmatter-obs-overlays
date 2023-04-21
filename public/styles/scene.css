@@ -106,9 +106,14 @@ body {
   font-weight: 600;
 }
 
-.small-widget, .social-widget__camera-frame {
-  font-size: 40px;
+.widget, .social-widget {
   font-family: "Tilt Neon", cursive;
+}
+.widget-small, .social-widget__camera-frame {
+  font-size: 40px;
+}
+.widget-large, .social-widget__camera-frame__large {
+  font-size: 60px;
 }
 
 i[class^=fa] {
@@ -130,7 +135,7 @@ i[class^=fa] {
 .space-height-ratio, .camera-frame {
   height: 315px;
 }
-.space-double-width, .camera-frame__large {
+.space-double-width, .camera-frame__large, .social-widget__camera-frame__large {
   width: 840px;
 }
 .space-double-width-ratio {
@@ -216,6 +221,10 @@ i[class^=fa] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.social-widget__camera-frame__large {
+  bottom: 0;
+  border: 1px solid white;
 }
 
 .scene-title {

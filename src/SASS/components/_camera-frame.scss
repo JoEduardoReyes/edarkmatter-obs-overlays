@@ -22,10 +22,11 @@
 }
 
 .social-widget {
+	@extend .widget;
 	position: relative;
 	&__camera-frame {
 		@extend .glass-background;
-		@extend .small-widget;
+		@extend .widget-small;
 		@extend .space-width;
 		@extend .rounded;
 		position: absolute;
@@ -34,5 +35,11 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		&__large {
+			@extend .space-double-width;
+			@extend .widget-large;
+			bottom: 0;
+			border: 1px solid white;
+		}
 	}
 }

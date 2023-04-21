@@ -30,9 +30,14 @@
 	font-weight: t.$font-semibold-font-weight;
 }
 
-.small-widget {
-	font-size: t.$widget__small;
+.widget {
 	font-family: t.$secondary-font-family;
+	&-small {
+		font-size: t.$widget__small;
+	}
+	&-large {
+		font-size: t.$widget__large;
+	}
 }
 
 i[class^="fa"] {

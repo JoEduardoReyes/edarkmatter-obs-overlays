@@ -1,15 +1,18 @@
 mixin camera-frame
   .camera-frame
-    .social-widget__camera-frame
+    .social-widget.social-widget__camera-frame
       span EDarkMatterG
       i(class="fa-brands fa-twitch twitch")
       +bolts
 
 mixin camera-frame__large
   .camera-frame.camera-frame__large
-    +secondary-title
+    .social-widget.social-widget__camera-frame.social-widget__camera-frame__large
+      span EDarkMatterG
+      i(class="fa-brands fa-twitch twitch")
+      +bolts
 
 mixin bolts
   .bolts
-    div 
-    div 
+    div
+    div
