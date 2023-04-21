@@ -36,4 +36,8 @@
 	&-title {
 		padding-left: t.$title-scene-padding;
 	}
+	&-game {
+		display: grid;
+		grid-template-columns: t.$spacing 1fr t.$spacing;
+	}
 }

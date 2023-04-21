@@ -151,6 +151,12 @@ i[class^=fa] {
 .scene-title {
   padding-left: 140px;
 }
+.scene-game {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 420px 1fr 420px;
+  grid-template-columns: 420px 1fr 420px;
+}
 
 .main-color-border, .camera-frame {
   border: #5d04d9 5px solid;
@@ -224,7 +230,6 @@ i[class^=fa] {
 }
 .social-widget__camera-frame__large {
   bottom: 0;
-  border: 1px solid white;
 }
 
 .scene-title {
@@ -239,4 +244,45 @@ i[class^=fa] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.scene-game {
+  height: 1080px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 420px 1fr 420px;
+  grid-template-columns: 420px 1fr 420px;
+  -ms-grid-rows: 35% 65%;
+  grid-template-rows: 35% 65%;
+  place-items: end;
+}
+
+.scene-game > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.scene-game > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.scene-game > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.scene-game > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.scene-game > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+
+.scene-game > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
 }
