@@ -31,3 +31,9 @@
 		}
 	}
 }
+
+.scene {
+	&-title {
+		padding-left: t.$title-scene-padding;
+	}
+}
