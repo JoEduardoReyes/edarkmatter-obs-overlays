@@ -32,12 +32,12 @@ $EDarkMatter-Black: black;
 
 $glass-color: rgba(
 	$color: #000000,
-	$alpha: 0.1,
+	$alpha: 0.8,
 );
 
 // --- Dev colors -------------------------------- algunos colores que serviran para resaltar contrastes durante el desarrollo
 
-$background-blue: #1f2526;
+$background-blue: transparent;
 
 // ----- Spacing --------------------------------
 
@@ -65,7 +65,7 @@ $medium-font-size: 80px;
 $complementary-font-size: 90px;
 $social-icon-text-size: 0.8em;
 $widget__small: 40px;
-$widget__large: 60px;
+$widget__large: 50px;
 
 // font weight
 
