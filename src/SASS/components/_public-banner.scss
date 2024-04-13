@@ -1,0 +1,15 @@
+// Utils
+
+@use "../utils/index" as utils;
+
+// Content
+
+#banner-box {
+	grid-column: 3;
+	grid-row: 2;
+	@extend .secondary-font;
+	@extend .glass-background;
+	@extend .main-color-border;
+	@extend .rounded;
+	@extend .space-width;
+}
