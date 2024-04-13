@@ -47,6 +47,10 @@ $spacing: 420px;
 $aspect-ratio: calc($spacing / 4 * 3);
 $video-ratio: calc($spacing / 9 * 16);
 
+// widgets spacing
+
+$public-banner_height: 80px;
+
 // Padings and margins --------------------------------
 
 $title-scene-padding: 140px;
@@ -63,13 +67,16 @@ $secondary-font-family: "Tilt Neon", cursive;
 $extra-large-font-size: 240px;
 $medium-font-size: 80px;
 $complementary-font-size: 90px;
-$social-icon-text-size: 0.8em;
+$social-icon-text-size: 0.9em;
 $widget__small: 40px;
 $widget__large: 50px;
+$public-banner-font: 22px;
+$public-banner-font__lg: calc($public-banner-font * 1.2);
 
 // font weight
 
 $font-semibold-font-weight: 600;
+$font-bold-font-weight: 700;
 
 // Border Radius
 

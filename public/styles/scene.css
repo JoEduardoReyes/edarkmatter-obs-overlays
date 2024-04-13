@@ -87,7 +87,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.secondary-font, #banner-box, .title-level-two, .secondary-title {
+.secondary-font, .title-level-two, .secondary-title {
   font-family: "Tilt Neon", cursive;
 }
 
@@ -103,7 +103,12 @@ body {
   font-size: 90px;
 }
 
-.semibold-font, .big-title-level-one, .big-title-level-two {
+.bold-font, .public-banner #aff_offer,
+.public-banner #aff_link {
+  font-weight: 700;
+}
+
+.semibold-font, .big-title-level-one, .big-title-level-two, .public-banner #aff_des {
   font-weight: 600;
 }
 
@@ -117,14 +122,28 @@ body {
   font-size: 50px;
 }
 
+.public-banner {
+  font-family: "Tilt Neon", cursive;
+}
+.public-banner #banner_title {
+  font-size: 22px;
+}
+.public-banner #aff_des {
+  font-size: 22px;
+}
+.public-banner #aff_offer,
+.public-banner #aff_link {
+  font-size: 26.4px;
+}
+
 i[class^=fa] {
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin-inline: 8px;
 }
 
 /* ----- spacing ----- */
 /* regular spacing */
-.space-width, #banner-box, .camera-frame, .social-widget__camera-frame {
+.space-width, #banner-box, .camera-frame, .social-widget__camera-frame, .public-banner {
   width: 420px;
 }
 .space-width-ratio {
@@ -147,6 +166,10 @@ i[class^=fa] {
 }
 .space-double-height-ratio, .camera-frame__large {
   height: 630px;
+}
+
+.public-banner {
+  height: 80px;
 }
 
 .scene-title {
@@ -244,6 +267,37 @@ i[class^=fa] {
   grid-column: 3;
   -ms-grid-row: 2;
   grid-row: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 80px;
+}
+#banner-box #aff_logo {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+#banner-box #aff_logo img {
+  height: 70px;
+}
+#banner-box .aff-item {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+#banner-box .hidden {
+  display: none;
 }
 
 .scene-title {
