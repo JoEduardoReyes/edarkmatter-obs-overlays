@@ -1,11 +1,33 @@
 // Selecciona todos los elementos con la clase "aff-item"
 const AFF_ITEMS = Array.from(document.querySelectorAll(".aff-item"));
 
-// Inicializa el contador de elementos
+// Seteandop contadores en 0
+let currentAffSpoCounter = 0;
 let currentItemCount = 0;
 
+// Cambiar de afiliados o sponsorship
+
+function changeAffSpo() {
+	let currentAffSpo = AFF_SPON[currentAffSpoCounter];
+	AFF_ITEMS[0].innerText = currentAffSpo.type;
+	AFF_ITEMS[1].querySelector("img").src = currentAffSpo.logo =
+		currentAffSpo.logo;
+	AFF_ITEMS[2].innerText = currentAffSpo.descrtion;
+	AFF_ITEMS[3].innerText = currentAffSpo.offer;
+	AFF_ITEMS[4].innerText = currentAffSpo.link;
+	if (currentAffSpoCounter === AFF_SPON.length - 1) {
+		currentAffSpoCounter = 0;
+	} else {
+		currentAffSpoCounter++;
+	}
+	return `El affiliado es ${currentAffSpo.link}`;
+}
+
 // Oculta todos los elementos excepto el elemento en la posición "currentItemCount"
-function displayIt() {
+function changeText() {
+	if (currentItemCount === 0) {
+		changeAffSpo();
+	}
 	// Oculta todos los elementos
 	AFF_ITEMS.forEach((item) => {
 		item.classList.add("hidden");
@@ -29,5 +51,6 @@ function displayIt() {
 	return `El texto ha cambiado a ${AFF_ITEMS[PreviousCount].innerText}`;
 }
 
-displayIt();
-setInterval(displayIt, 4000);
+changeText();
+
+// Cambiar el Affiliado o Sponsor
