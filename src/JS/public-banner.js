@@ -54,4 +54,4 @@ function changeText() {
 changeText();
 
 // Ejecuta la función "changeText" cada 2 segundos para rotar los afiliados
-setInterval(changeText, 2000);
+setInterval(changeText, 6000);
