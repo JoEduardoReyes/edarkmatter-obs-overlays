@@ -37,7 +37,7 @@ function changeText() {
 		(item, index) => item.classList.toggle("hidden", index !== currentItemCount) // Muestra/oculta según la posición actual
 	);
 
-	AFF_ITEMS[currentItemCount].classList.add("animate__backInUp"); // Añade animación de entrada al elemento actual
+	// AFF_ITEMS[currentItemCount].classList.add("animate__backInUp"); // Añade animación de entrada al elemento actual
 
 	// Guarda el valor anterior de "currentItemCount"
 	const previousCount = currentItemCount;
@@ -54,4 +54,4 @@ function changeText() {
 changeText();
 
 // Ejecuta la función "changeText" cada 2 segundos para rotar los afiliados
-setInterval(changeText, 6000);
+setInterval(changeText, 10000);
