@@ -28,6 +28,10 @@
 	font-size: t.$complementary-font-size;
 }
 
+.bold-font {
+	font-weight: t.$font-bold-font-weight;
+}
+
 .semibold-font {
 	font-weight: t.$font-semibold-font-weight;
 }
@@ -39,6 +43,22 @@
 	}
 	&-large {
 		font-size: t.$widget__large;
+	}
+}
+
+.public-banner {
+	font-family: t.$secondary-font-family;
+	#banner_title {
+		font-size: t.$public-banner-font;
+	}
+	#aff_des {
+		font-size: t.$public-banner-font;
+		@extend .semibold-font;
+	}
+	#aff_offer,
+	#aff_link {
+		@extend .bold-font;
+		font-size: t.$public-banner-font__lg;
 	}
 }
 

@@ -32,6 +32,11 @@
 	}
 }
 
+.public-banner {
+	@extend .space-width;
+	height: t.$public-banner_height;
+}
+
 .scene {
 	&-title {
 		padding-left: t.$title-scene-padding;

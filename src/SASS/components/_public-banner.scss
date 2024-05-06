@@ -1,0 +1,32 @@
+// Utils
+
+@use "../utils/index" as utils;
+
+// Content
+
+#banner-box {
+	grid-column: 3;
+	grid-row: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	height: 80px;
+	@extend .glass-background;
+	@extend .main-color-border;
+	@extend .rounded;
+	@extend .space-width;
+	#aff_logo {
+		width: min-content;
+		img {
+			height: 70px;
+		}
+	}
+	.aff-item {
+		min-width: max-content;
+	}
+	.hidden {
+		display: none;
+	}
+}
