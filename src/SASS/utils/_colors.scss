@@ -37,7 +37,7 @@
 }
 
 .tiktok {
-	box-shadow: 0 2px 4px t.$tiktok-shadow-blue, 0 4px 12px t.$tiktok-shadow-red;
+	@include generate-styles(t.$EDarkMatter-White);
 }
 
 /* ------ dev colors */
