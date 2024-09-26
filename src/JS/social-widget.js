@@ -11,43 +11,34 @@ const socialProfiles = [
 
 let currentProfile = 0;
 
+// Cambia el perfil social actual
 function changeSocial() {
 	const { name, icon, class: socialClass } = socialProfiles[currentProfile];
 	socialNameElement.innerText = name;
 	socialIconElement.className = `fa-brands ${icon} ${socialClass}`;
-	if (currentProfile === socialProfiles.length - 1) {
-		currentProfile = 0;
-	} else {
-		currentProfile++;
-	}
-	return name;
+	currentProfile = (currentProfile + 1) % socialProfiles.length; // Lógica modular para rotar
 }
 
-function entranceAnimation() {
-	changeSocial();
-	socialWidgetElement.classList.remove("animate__bounceOutUp");
-	socialWidgetElement.classList.add("animate__bounceInDown");
-	setTimeout(() => {
-		socialWidgetElement.classList.remove("animate__bounceInDown");
-	}, 2000);
+// Aplica una animación a un elemento
+function applyAnimation(element, animationClass, duration = 2000) {
+	element.classList.add(animationClass);
+	setTimeout(() => element.classList.remove(animationClass), duration);
 }
 
-function attentionAnimation() {
-	socialWidgetElement.classList.add("animate__bounce");
-	setTimeout(() => {
-		socialWidgetElement.classList.remove("animate__bounce");
-	}, 2000);
-}
-
-function exitAnimation() {
-	socialWidgetElement.classList.add("animate__bounceOutUp");
-}
-
+// Control de animaciones de entrada, atención y salida
 function socialRotation() {
-	entranceAnimation();
-	setTimeout(attentionAnimation, 10000);
-	setTimeout(exitAnimation, 18000);
+	changeSocial();
+	applyAnimation(socialWidgetElement, "animate__bounceInDown", 2000); // Entrada
+	setTimeout(
+		() => applyAnimation(socialWidgetElement, "animate__bounce", 2000),
+		10000
+	); // Atención
+	setTimeout(
+		() => applyAnimation(socialWidgetElement, "animate__bounceOutUp", 2000),
+		18000
+	); // Salida
 }
 
+// Inicia la rotación
 socialRotation();
 setInterval(socialRotation, 20000);
