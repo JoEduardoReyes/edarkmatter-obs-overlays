@@ -61,8 +61,10 @@ body {
 }
 
 .tiktok {
-  -webkit-box-shadow: 0 2px 4px #69c9d0, 0 4px 12px #ee1d52;
-          box-shadow: 0 2px 4px #69c9d0, 0 4px 12px #ee1d52;
+  color: white;
+}
+.tiktok-background {
+  background-color: white;
 }
 
 /* ------ dev colors */
@@ -256,16 +258,7 @@ i[class^=fa] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: visibility 0.5s, opacity 0.5s ease-in-out;
-  transition: visibility 0.5s, opacity 0.5s ease-in-out;
-}
-.social-widget__camera-frame.hidden {
-  visibility: hidden;
-  opacity: 0;
-}
-.social-widget__camera-frame.visible {
-  visibility: visible;
-  opacity: 1;
+  overflow: hidden;
 }
 .social-widget__camera-frame__large {
   bottom: 0;

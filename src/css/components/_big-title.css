@@ -42,8 +42,10 @@
 }
 
 .tiktok {
-  -webkit-box-shadow: 0 2px 4px #69c9d0, 0 4px 12px #ee1d52;
-          box-shadow: 0 2px 4px #69c9d0, 0 4px 12px #ee1d52;
+  color: white;
+}
+.tiktok-background {
+  background-color: white;
 }
 
 /* ------ dev colors */
