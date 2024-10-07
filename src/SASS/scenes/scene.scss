@@ -1,6 +1,5 @@
 // Imports
 
-@use "../vendor/index" as vendor;
-@use "../components/index" as components;
-@use "../layout/index" as layout;
-@use "../themes/index" as themes;
+@use "../vendor/vendor" as vendor;
+@use "../components/components" as components;
+@use "../layout/layout" as layout;

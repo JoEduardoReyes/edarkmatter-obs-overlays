@@ -1,9 +1,7 @@
 // Utils
+@use "../utils/utils" as utils;
 
-@use "../utils/index" as utils;
-
-// Styles
-
+/* ---- Big Title Styles ---- */
 .big-title-level-one {
 	@extend .xl-font;
 	@extend .main-font;
@@ -19,4 +17,14 @@
 .secondary-title {
 	@extend .secondary-font;
 	@extend .complementary-font;
+}
+
+/* ---- Video Container ---- */
+.video-container {
+	@extend .main-color-border;
+}
+
+.title-level-two {
+	@extend .md-font;
+	@extend .secondary-font;
 }
