@@ -89,7 +89,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.secondary-font, .title-level-two, .secondary-title {
+.secondary-font, .secondary-title, .title-level-two {
   font-family: "Tilt Neon", cursive;
 }
 
@@ -97,7 +97,7 @@ body {
   font-size: 240px;
 }
 
-.md-font, .title-level-two, .big-title-level-two {
+.md-font, .big-title-level-two, .title-level-two {
   font-size: 80px;
 }
 
@@ -189,7 +189,7 @@ i[class^=fa] {
   width: 1120px;
 }
 
-.main-color-border, #banner-box, .video-container, .camera-frame {
+.main-color-border, #banner-box, .camera-frame, .video-container {
   border: #5d04d9 5px solid;
 }
 
@@ -222,6 +222,8 @@ i[class^=fa] {
   border: 3px solid rgba(255, 255, 255, 0.5);
 }
 
+/* ---- Big Title Styles ---- */
+/* ---- Video Container ---- */
 .camera-frame {
   position: relative;
 }
@@ -264,7 +266,6 @@ i[class^=fa] {
   bottom: 0;
 }
 
-/* Video Container */
 #banner-box {
   -ms-grid-column: 3;
   grid-column: 3;

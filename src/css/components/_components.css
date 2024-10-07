@@ -57,7 +57,7 @@
 }
 
 /* ---- other colors */
-.glass-background {
+.glass-background, #banner-box, .social-widget__camera-frame {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -95,13 +95,13 @@
   font-weight: 600;
 }
 
-.widget {
+.widget, .social-widget {
   font-family: "Tilt Neon", cursive;
 }
-.widget-small {
+.widget-small, .social-widget__camera-frame {
   font-size: 40px;
 }
-.widget-large {
+.widget-large, .social-widget__camera-frame__large {
   font-size: 50px;
 }
 
@@ -126,7 +126,7 @@ i[class^=fa] {
 
 /* ----- spacing ----- */
 /* regular spacing */
-.space-width, .public-banner {
+.space-width, #banner-box, .camera-frame, .social-widget__camera-frame, .public-banner {
   width: 420px;
 }
 .space-width-ratio {
@@ -135,10 +135,10 @@ i[class^=fa] {
 .space-height {
   height: 420px;
 }
-.space-height-ratio {
+.space-height-ratio, .camera-frame {
   height: 315px;
 }
-.space-double-width {
+.space-double-width, .camera-frame__large, .social-widget__camera-frame__large {
   width: 840px;
 }
 .space-double-width-ratio {
@@ -147,7 +147,7 @@ i[class^=fa] {
 .space-double-height {
   height: 840px;
 }
-.space-double-height-ratio {
+.space-double-height-ratio, .camera-frame__large {
   height: 630px;
 }
 
@@ -170,11 +170,11 @@ i[class^=fa] {
   width: 1120px;
 }
 
-.main-color-border, .video-container {
+.main-color-border, #banner-box, .camera-frame, .video-container {
   border: #5d04d9 5px solid;
 }
 
-.rounded {
+.rounded, #banner-box, .camera-frame, .social-widget__camera-frame {
   border-radius: 20px;
 }
 
@@ -205,3 +205,82 @@ i[class^=fa] {
 
 /* ---- Big Title Styles ---- */
 /* ---- Video Container ---- */
+.camera-frame {
+  position: relative;
+}
+.camera-frame__large {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-widget {
+  position: relative;
+}
+.social-widget__camera-frame {
+  position: absolute;
+  bottom: -100px;
+  line-height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.social-widget__camera-frame__large {
+  bottom: 0;
+}
+
+#banner-box {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 80px;
+}
+#banner-box #aff_logo {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+#banner-box #aff_logo img {
+  height: 70px;
+}
+#banner-box .aff-item {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+#banner-box .hidden {
+  display: none;
+}
