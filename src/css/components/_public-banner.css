@@ -238,5 +238,5 @@ i[class^=fa] {
   min-width: max-content;
 }
 #banner-box .hidden {
-  display: none;
+  display: none !important;
 }
