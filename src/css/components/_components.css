@@ -205,6 +205,10 @@ i[class^=fa] {
 
 /* ---- Big Title Styles ---- */
 /* ---- Video Container ---- */
+.video-container iframe {
+  z-index: -10;
+}
+
 .camera-frame {
   position: relative;
 }
