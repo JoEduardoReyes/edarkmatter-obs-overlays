@@ -70,7 +70,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.secondary-font, .secondary-title, .title-level-two {
+.secondary-font, .secondary-title, .title-level-two, .title-level-two_seguimiento {
   font-family: "Tilt Neon", cursive;
 }
 
@@ -78,7 +78,7 @@
   font-size: 240px;
 }
 
-.md-font, .big-title-level-two, .title-level-two {
+.md-font, .big-title-level-two, .title-level-two, .title-level-two_seguimiento {
   font-size: 80px;
 }
 
@@ -207,6 +207,11 @@ i[class^=fa] {
 /* ---- Video Container ---- */
 .video-container iframe {
   z-index: -10;
+}
+
+.title-level-two_seguimiento {
+  -webkit-margin-before: 20px;
+          margin-block-start: 20px;
 }
 
 .camera-frame {

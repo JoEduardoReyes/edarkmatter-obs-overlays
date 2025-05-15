@@ -30,4 +30,8 @@
 .title-level-two {
 	@extend .md-font;
 	@extend .secondary-font;
+	&_seguimiento {
+		@extend .title-level-two;
+		margin-block-start: 20px;
+	}
 }
